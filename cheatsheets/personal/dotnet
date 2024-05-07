@@ -1,0 +1,11 @@
+#to create a new web api
+dotnet new webapi --use-controllers -o TodoApi
+
+#to create new class lib
+dotnet new classlib -n MyLibrary
+
+#create new solution
+dotnet new sln -n MySolution
+
+#add library to solution
+dotnet sln add MyLibrary/MyLibrary.csproj
