@@ -71,6 +71,11 @@ cheatpaths:
     tags: [ personal ]
     readonly: false
 
+  - name: gitignore
+    path: /home/thankarezos/.config/cheat/cheatsheets/gitignore
+    tags: [ gitignore ]
+    readonly: false
+
   # While it requires no configuration here, it's also worth noting that
   # cheat will automatically append directories named '.cheat' within the
   # current working directory to the 'cheatpath'. This can be very useful if
