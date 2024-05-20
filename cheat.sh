@@ -11,9 +11,6 @@ if [ ! -f "$CONFIG_FILE" ]; then
   exit 1
 fi
 
-# Replace $HOME with the actual home directory path
-sed -i "s|\$HOME|$HOME|g" "$CONFIG_FILE"
-echo "Replacement complete."
 
 # Determine which shell configuration file to update
 case $SHELL in
