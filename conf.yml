@@ -17,7 +17,7 @@ formatter: terminal256
 # Through which pager should output be piped?
 # 'less -FRX' is recommended on Unix systems
 # 'more' is recommended on Windows
-pager: more
+pager: less
 
 # Cheatpaths are paths at which cheatsheets are available on your local
 # filesystem.
@@ -76,10 +76,6 @@ cheatpaths:
     tags: [ gitignore ]
     readonly: false
 
-  - name: personal
-    path: /home/thankarezos/.config/cheat/cheatsheets/personal
-    tags: [ personal ]
-    readonly: false
 
   # While it requires no configuration here, it's also worth noting that
   # cheat will automatically append directories named '.cheat' within the
