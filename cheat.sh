@@ -11,9 +11,6 @@ if [ ! -f "$CONFIG_FILE" ]; then
   exit 1
 fi
 
-# Replace $HOME with the actual home directory path
-sed -i "s|\$HOME|$HOME|g" "$CONFIG_FILE"
-echo "Replacement complete."
 
 # Determine which shell configuration file to update
 case $SHELL in
@@ -35,6 +32,7 @@ if [[ $add_aliases =~ ^[Yy]$ ]]; then
     # Add aliases to the shell configuration file
     echo "alias cheatcommit='git --git-dir=${HOME}/.config/cheat/.git --work-tree=${HOME}/.config/cheat add . && git --git-dir=${HOME}/.config/cheat/.git --work-tree=${HOME}/.config/cheat commit'" >> "$SHELL_CONFIG"
     echo "alias cheatpush='git --git-dir=${HOME}/.config/cheat/.git --work-tree=${HOME}/.config/cheat push'" >> "$SHELL_CONFIG"
+     echo "alias cheatpull='git --git-dir=${HOME}/.config/cheat/.git --work-tree=${HOME}/.config/cheat pull'" >> "$SHELL_CONFIG"
 
     echo "Aliases added to $SHELL_CONFIG."
     echo "You may need to reload your shell configuration by running: source $SHELL_CONFIG"
