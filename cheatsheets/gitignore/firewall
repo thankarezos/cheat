@@ -1,5 +1,0 @@
-#add port
-sudo firewall-cmd --zone=public --add-port=5205/tcp --permanent
-
-#reload firewall
-sudo firewall-cmd --reload
